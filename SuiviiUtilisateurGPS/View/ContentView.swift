@@ -14,8 +14,8 @@ struct ContentView: View {
         
     var body: some View {
         Map(position: $positionCamera)
-        //on peut même changer le style de carte pour avoir les transports en commun
-       //.mapStyle(.hybrid(elevation: .automatic,pointsOfInterest: [.publicTransport]))
+        //on peut même changer le style de carte, et ajouter  les transports en commun, les banques, les parcs.....
+            .mapStyle(.standard(elevation: .automatic,pointsOfInterest: [.publicTransport,.cafe,.amusementPark]))
             .mapControls{
                 // bouton de localisation sur la carte 
                 MapUserLocationButton()
