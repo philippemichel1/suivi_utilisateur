@@ -4,7 +4,6 @@
 //
 //  Created by Philippe MICHEL on 17/03/2024.
 //
-
 import Foundation
 import MapKit
 
@@ -26,7 +25,7 @@ class SuiviUtilisateur:NSObject,CLLocationManagerDelegate {
         manager.requestAlwaysAuthorization()
     }
     
-    // récupere la réponse de l'utilisateur
+    // récupére la réponse de l'utilisateur
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {
         case.authorizedAlways: print("authorizedAlways")
@@ -43,5 +42,4 @@ class SuiviUtilisateur:NSObject,CLLocationManagerDelegate {
         print(error.localizedDescription)
     }
    
-    
 }
